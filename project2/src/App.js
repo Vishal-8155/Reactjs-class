@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Classbasecomp from './component/Classbasecomp';
+import Functionbasecomp from './component/Functionbasecomp';
+import IncreDecre from './component/IncreDecre';
+import Statecomp from './component/Statecomp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h2>Function Base Component</h2>
+      
+      <Functionbasecomp />
+
+      <h2>Class Base Component</h2>
+
+      <Classbasecomp /> <hr />
+
+      <h2>Increment Decrement</h2>
+
+      <IncreDecre /> <hr />
+
+      <h2>State Component</h2>
+
+      <Statecomp /> <hr />
+
     </div>
   );
 }
